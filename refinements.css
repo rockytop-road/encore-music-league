@@ -394,6 +394,22 @@ dialog[open] { overscroll-behavior: none; }
 .past-round-summary .podium { display: flex; flex-wrap: wrap; gap: 12px 20px; margin: 10px 0 0; }
 .past-round-details { padding: 0 18px 16px; }
 .past-round-details > .text-button { margin-bottom: 5px; }
+.reorder-hint { margin: -14px 0 18px; color: var(--muted); font-size: 12px; }
+.past-round-disclosure { padding: 0; }
+.past-round-summary { width: 100%; border: 0; background: transparent; color: inherit; text-align: left; font: inherit; }
+.past-round-summary:hover { background: #fafbf9; }
+.past-round-chevron { font-size: 0; }
+.past-round-chevron::before { content: "⌄"; font-size: 20px; }
+.round-vote-option { display: grid; gap: 0; padding: 0; overflow: hidden; }
+.round-option-vote { width: 100%; }
+.round-description-preview { display: block; margin: 0; color: var(--muted); font-size: 10px; line-height: 1.45; }
+.round-description-toggle { width: 100%; padding: 0 9px 9px; border: 0; background: transparent; text-align: left; cursor: pointer; }
+.round-description-toggle:hover { color: var(--ink); }
+.scheduled-theme { grid-template-columns: 1fr; }
+.scheduled-theme > .round-description-preview { grid-column: 1; }
+.round-info-button { display: none !important; }
+.future-item strong { display: block; }
+.future-item > .round-description-preview { margin-top: 6px; }
 .results-toolbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin: 14px 0 18px; }
 .results-toolbar .results-round-select { flex-wrap: wrap; margin: 0; }
 .results-playlist-link { flex: 0 0 auto; }
