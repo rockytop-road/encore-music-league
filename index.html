@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f7f8f6" />
+    <title>Encore — Music League</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./island.css" />
+    <link rel="stylesheet" href="./refinements.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <button class="brand" data-action="home" aria-label="Go to home"><span class="brand-mark">e</span><span>encore</span></button>
+        <div class="top-actions">
+          <button class="icon-button" data-action="profile" aria-label="Profile and settings"><span class="avatar">N</span><span class="profile-label">Profile</span></button>
+        </div>
+      </header>
+      <nav id="league-nav" class="league-nav hidden" aria-label="League navigation"></nav>
+      <main id="app" class="main-content"></main>
+    </div>
+    <dialog id="modal" class="modal"><form method="dialog" class="modal-card"><button class="modal-close" aria-label="Close">×</button><div id="modal-content"></div></form></dialog>
+    <script src="./app.js"></script>
+  </body>
+</html>
