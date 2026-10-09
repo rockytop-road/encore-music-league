@@ -432,3 +432,7 @@ dialog[open] { overscroll-behavior: none; }
   .results-toolbar .results-round-select select { width: 100%; }
   .results-playlist-link { width: 100%; }
 }
+
+.past-round-chevron::before { content: ">"; font-size: 20px; }
+.past-round-disclosure[open] .past-round-chevron::before { content: "⌄"; }
+.past-round-disclosure[open] .past-round-chevron { transform: none; }
