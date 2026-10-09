@@ -350,3 +350,69 @@ dialog[open] { overscroll-behavior: none; }
 .round-prompt-library + .button { width: 100%; }
 .picker-future-item { border-left: 3px solid #d9e9dd; }
 .round-picker-byline { color: var(--green-dark) !important; font-size: 13px !important; }
+
+/* Separate the three league-home actions into clear, independent panels. */
+.league-sidebar { display: grid; gap: 12px; padding: 0; border: 0; background: transparent; box-shadow: none; }
+.league-sidebar .sidebar-feature { min-width: 0; margin: 0; padding: 15px; border: 1px solid var(--line); border-radius: 15px; background: #fff; box-shadow: 0 2px 8px rgba(30,40,30,.025); }
+.league-sidebar .sidebar-feature > .eyebrow { margin-bottom: 8px; }
+.league-sidebar .sidebar-feature > p:last-child { margin-bottom: 0; }
+.scheduled-theme { position: relative; display: grid; grid-template-columns: 1fr auto; align-items: start; gap: 4px 8px; margin: 10px 0 4px !important; padding: 10px 0 12px; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; background: transparent; }
+.scheduled-theme > span { grid-column: 1; color: var(--muted); }
+.scheduled-theme > strong { grid-column: 1; }
+.scheduled-theme > .round-info-button { grid-column: 2; grid-row: 1 / span 2; }
+.round-vote-options { gap: 8px; }
+.round-vote-option { display: flex; align-items: stretch; padding: 0; overflow: hidden; }
+.round-vote-option.selected { border-color: var(--green); background: #f3faf5; }
+.round-option-vote { display: flex; flex: 1; min-width: 0; align-items: center; justify-content: space-between; gap: 8px; padding: 9px; border: 0; background: transparent; color: inherit; text-align: left; }
+.round-option-copy { display: grid; gap: 3px; min-width: 0; }
+.round-option-copy > strong { font-size: 11px; line-height: 1.35; }
+.round-option-result { flex: 0 0 auto; color: var(--green-dark); font-size: 10px; font-weight: 700; }
+.round-info-button { display: inline-grid; flex: 0 0 24px; place-items: center; width: 24px; height: 24px; padding: 0; border: 1px solid #cfd6d0; border-radius: 50%; background: white; color: var(--muted); font-size: 12px; font-weight: 700; line-height: 1; vertical-align: middle; }
+.round-info-button:hover, .round-info-button:focus-visible { border-color: var(--green); background: var(--green-soft); color: var(--green-dark); }
+.round-vote-option > .round-info-button { align-self: center; margin-right: 8px; }
+.clear-round-vote { margin-top: 2px; }
+.feature-badge { white-space: nowrap; }
+.future-item strong { display: flex; align-items: center; gap: 8px; }
+.future-item > p { margin: 6px 0 0; color: var(--muted); font-size: 12px; line-height: 1.5; }
+.waiting-people { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 5px; color: var(--muted); font-size: 11px; }
+.waiting-person { display: inline-flex; align-items: center; gap: 4px; white-space: nowrap; }
+.waiting-avatar { display: inline-grid; place-items: center; width: 21px; height: 21px; border-radius: 50%; background: #e9e5dc; color: #655941; font-size: 8px; font-weight: 800; }
+.round-actions { gap: 14px; }
+.playlist-action { color: #515b53; }
+.vote-action { margin-left: 3px; }
+.guess-activity { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; margin-top: 15px; padding-top: 11px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
+.guess-activity strong { color: var(--ink); }
+.round-restrictions { display: grid; gap: 7px; margin: -5px 0 16px; }
+.round-restrictions > div { display: flex; flex-wrap: wrap; gap: 4px 8px; color: var(--muted); font-size: 12px; }
+.round-restrictions strong { color: var(--ink); }
+.past-round-disclosure { padding: 0; }
+.past-round-summary { display: flex; align-items: flex-start; gap: 12px; padding: 16px 18px; list-style: none; cursor: pointer; }
+.past-round-summary::-webkit-details-marker { display: none; }
+.past-round-chevron { flex: 0 0 auto; color: var(--green-dark); font-size: 20px; line-height: 1; }
+.past-round-disclosure[open] .past-round-chevron { transform: rotate(90deg); }
+.past-round-summary-copy { min-width: 0; }
+.past-round-summary .podium { display: flex; flex-wrap: wrap; gap: 12px 20px; margin: 10px 0 0; }
+.past-round-details { padding: 0 18px 16px; }
+.past-round-details > .text-button { margin-bottom: 5px; }
+.results-toolbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin: 14px 0 18px; }
+.results-toolbar .results-round-select { flex-wrap: wrap; margin: 0; }
+.results-playlist-link { flex: 0 0 auto; }
+.result-preview-button { display: inline-grid; flex: 0 0 28px; place-items: center; width: 28px; height: 28px; margin-right: 8px; border: 1px solid var(--line); border-radius: 50%; background: #fff; color: var(--green-dark); font-size: 11px; }
+.result-preview-button:hover { border-color: #b8d8c1; background: var(--green-soft); }
+.result-song-info { display: block; }
+.result-song-info > strong { display: inline; }
+.result-song-info > span { display: block; }
+.song-history-results { display: grid; gap: 6px; }
+.song-history-results .search-hit { display: grid; gap: 3px; }
+.song-history-results .search-hit > span, .song-history-results .search-hit > small { color: var(--muted); font-size: 11px; }
+.league-identity-settings .button, .round-voting-settings .button { width: 100%; margin-top: 10px; }
+.settings-help { margin: 6px 0 0 !important; font-size: 11px !important; }
+.profile-setting .form-input { width: 100%; margin-top: 8px; }
+@media (max-width: 720px) {
+  .past-round-summary { padding: 14px; }
+  .past-round-details { padding: 0 8px 12px; }
+  .results-toolbar { align-items: stretch; flex-direction: column; }
+  .results-toolbar .results-round-select { align-items: flex-start; flex-direction: column; }
+  .results-toolbar .results-round-select select { width: 100%; }
+  .results-playlist-link { width: 100%; }
+}
